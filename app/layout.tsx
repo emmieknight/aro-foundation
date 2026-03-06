@@ -1,35 +1,40 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
   title: "ARO Foundation | The Nurturing Place",
   description:
-    "Creating opportunities for vulnerable individuals through empowerment, health awareness, and community support.",
+    "ARO Foundation is a nonprofit organization creating opportunities for vulnerable individuals through thyroid awareness, empowerment, educational support, and community outreach.",
+  keywords: [
+    "ARO Foundation",
+    "thyroid awareness",
+    "thyroid awareness Nigeria",
+    "thyroid symptoms",
+    "NGO Nigeria",
+    "community outreach",
+    "widow empowerment",
+    "youth empowerment",
+    "children education support",
+    "health awareness foundation",
+  ],
+  authors: [{ name: "ARO Foundation" }],
+  creator: "ARO Foundation",
+  publisher: "ARO Foundation",
+  icons: {
+    icon: "/logo.png",
+  },
+  openGraph: {
+    title: "ARO Foundation | The Nurturing Place",
+    description:
+      "Creating opportunities for vulnerable individuals through thyroid awareness, empowerment, educational support, and community outreach.",
+    url: "https://aro-foundation.vercel.app",
+    siteName: "ARO Foundation",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "ARO Foundation Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
-}

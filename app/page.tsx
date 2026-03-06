@@ -242,6 +242,11 @@ export default function Home() {
               <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
                 Understanding thyroid health can save lives.
               </h2>
+              <p className="mt-4 leading-8 text-slate-600">
+  Our thyroid awareness work focuses on helping individuals and families in
+  Nigeria understand thyroid symptoms, the importance of early testing, and
+  the value of timely medical attention.
+</p>
               <p className="mt-6 leading-8 text-slate-600">
                 The thyroid is a small gland in the neck that plays an important
                 role in regulating metabolism, energy level, body temperature,
