@@ -2,6 +2,10 @@ export const metadata = {
   title: "ARO Foundation | The Nurturing Place",
   description:
     "ARO Foundation is a nonprofit organization creating opportunities for vulnerable individuals through thyroid awareness, empowerment, educational support, and community outreach.",
+     verification: {
+    google: "6VJHL4FigtYxmuFtZdHqsbseLcaPhatG8cifoQucyF4",
+  },
+
   keywords: [
     "ARO Foundation",
     "thyroid awareness",
