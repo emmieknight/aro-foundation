@@ -1,11 +1,24 @@
-export const metadata = {
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
   title: "ARO Foundation | The Nurturing Place",
   description:
     "ARO Foundation is a nonprofit organization creating opportunities for vulnerable individuals through thyroid awareness, empowerment, educational support, and community outreach.",
-     verification: {
+  verification: {
     google: "6VJHL4FigtYxmuFtZdHqsbseLcaPhatG8cifoQucyF4",
   },
-
   keywords: [
     "ARO Foundation",
     "thyroid awareness",
@@ -42,11 +55,12 @@ export const metadata = {
     type: "website",
   },
 };
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <head>
@@ -55,7 +69,11 @@ export default function RootLayout({
           content="6VJHL4FigtYxmuFtZdHqsbseLcaPhatG8cifoQucyF4"
         />
       </head>
-      <body>{children}</body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
