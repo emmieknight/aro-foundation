@@ -601,10 +601,8 @@ In the meantime, you can contact us through the Contact section below.
   Volunteer
 </a>
 
-           <a
-  href="https://wa.me/2348036144445"
-  target="_blank"
-  rel="noopener noreferrer"
+          <a
+ href="#donate-details"
   className="rounded-lg bg-yellow-400 px-6 py-3 font-semibold text-blue-900"
 >
   Donate
@@ -612,6 +610,88 @@ In the meantime, you can contact us through the Contact section below.
           </div>
         </div>
       </section>
+      <section id="donate-details" className="bg-slate-50 py-20">
+  <div className="mx-auto max-w-5xl px-6">
+
+    <div className="text-center">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
+        Support Our Work
+      </p>
+
+      <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+        Make a Donation
+      </h2>
+
+      <p className="mt-5 leading-8 text-slate-600">
+        Your support helps us continue thyroid awareness campaigns, community
+        outreach, widow empowerment, youth training, and educational support
+        for vulnerable individuals.
+      </p>
+    </div>
+
+    <div className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+
+      <div className="grid gap-6 md:grid-cols-2">
+
+        <div className="rounded-2xl bg-slate-50 p-5">
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+            Account Name
+          </p>
+
+          <p className="mt-2 text-lg font-bold text-slate-900">
+            Adedokun Rebecca Omolola A.R.O Foundation
+          </p>
+        </div>
+
+
+        <div className="rounded-2xl bg-slate-50 p-5">
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+            Bank Name
+          </p>
+
+          <p className="mt-2 text-lg font-bold text-slate-900">
+            Moniepoint Microfinance Bank
+          </p>
+        </div>
+
+
+        <div className="rounded-2xl bg-slate-50 p-5">
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+            Account Number
+          </p>
+
+          <p className="mt-2 text-xl font-bold text-slate-900">
+            8036144445
+          </p>
+        </div>
+
+
+        <div className="rounded-2xl bg-slate-50 p-5">
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+            Donation Confirmation
+          </p>
+
+          <p className="mt-2 text-base font-medium text-slate-900">
+            WhatsApp: +234 803 614 4445
+          </p>
+
+          <p className="mt-1 text-base font-medium text-slate-900">
+            Email: aroffoundation@gmail.com
+          </p>
+        </div>
+
+      </div>
+
+
+      <div className="mt-8 rounded-2xl bg-blue-50 p-5 text-sm leading-7 text-slate-700">
+        After making a donation, kindly send proof of payment through WhatsApp
+        or email so we can acknowledge and document your support.
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       <section id="contact" className="bg-slate-950 py-20 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
