@@ -527,9 +527,12 @@ export default function Home() {
                 placeholder="Your message"
                 className="min-h-[140px] rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
               />
-              <button className="rounded-2xl bg-blue-800 px-5 py-3 font-semibold text-white transition hover:bg-blue-900">
-                Send Message
-              </button>
+             <a
+  href="mailto:aroffoundation@gmail.com?subject=Message from ARO Foundation Website"
+  className="rounded-2xl bg-blue-800 px-5 py-3 font-semibold text-white transition hover:bg-blue-900 text-center"
+>
+  Send Message
+</a>
             </div>
           </div>
         </div>
