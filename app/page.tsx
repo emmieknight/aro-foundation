@@ -587,6 +587,14 @@ export default function Home() {
           © 2026 ARO Foundation. All rights reserved.
         </p>
       </footer>
+      <a
+  href="https://wa.me/2348036144445"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg font-semibold"
+>
+  Chat on WhatsApp
+</a>
     </main>
   );
 }
