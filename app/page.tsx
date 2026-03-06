@@ -61,6 +61,9 @@ export default function Home() {
             <a href="#thyroid" className="hover:text-blue-800">
               Thyroid Awareness
             </a>
+            <a href="#support" className="hover:text-blue-800">
+  Get Help
+</a>
             <a href="#impact" className="hover:text-blue-800">
               Impact
             </a>
@@ -314,6 +317,135 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="support" className="bg-slate-50 py-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="grid gap-10 md:grid-cols-2 md:items-start">
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
+          Request Support
+        </p>
+        <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+          Need help with thyroid support or guidance?
+        </h2>
+        <p className="mt-6 leading-8 text-slate-600">
+          If you or someone you know is living with a thyroid condition and
+          needs help, guidance, awareness support, or direction on the next
+          step, you can fill this form and our team will review the request and
+          reach out where possible.
+        </p>
+
+        <div className="mt-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <h3 className="text-xl font-bold text-slate-900">Please note</h3>
+          <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+            <li>• This support form does not replace medical diagnosis or emergency care.</li>
+            <li>• Please provide clear and truthful information.</li>
+            <li>• Our team may contact you by phone, email, or WhatsApp.</li>
+            <li>• In urgent medical situations, please visit a hospital immediately.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="rounded-3xl bg-white p-6 shadow-2xl">
+        <form
+          action="#"
+          method="POST"
+          className="grid gap-4"
+        >
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Full name"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone number"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+          />
+
+          <input
+            type="text"
+            name="location"
+            placeholder="City / State"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+          />
+
+          <select
+            name="requestFor"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Are you seeking help for yourself or someone else?
+            </option>
+            <option value="self">For myself</option>
+            <option value="someone-else">For someone else</option>
+          </select>
+
+          <select
+            name="supportType"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              What kind of support do you need?
+            </option>
+            <option value="awareness-guidance">Awareness / guidance</option>
+            <option value="medical-direction">Help finding next medical step</option>
+            <option value="emotional-support">Emotional / community support</option>
+            <option value="financial-support">Financial support inquiry</option>
+            <option value="other">Other</option>
+          </select>
+
+          <textarea
+            name="situation"
+            placeholder="Tell us briefly about the situation"
+            className="min-h-[150px] rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+          />
+
+          <select
+            name="contactMethod"
+            className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Preferred contact method
+            </option>
+            <option value="phone">Phone call</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="email">Email</option>
+          </select>
+
+          <label className="flex items-start gap-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm text-slate-600">
+            <input type="checkbox" name="consent" className="mt-1" />
+            <span>
+              I agree to be contacted by ARO Foundation regarding this request.
+            </span>
+          </label>
+<p className="text-sm text-slate-500">
+Support request submissions will be activated soon. 
+In the meantime, you can contact us through the Contact section below.
+</p>
+          <button
+            type="submit"
+            className="rounded-2xl bg-blue-800 px-5 py-3 font-semibold text-white transition hover:bg-blue-900"
+          >
+            Submit Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="impact" className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6">
