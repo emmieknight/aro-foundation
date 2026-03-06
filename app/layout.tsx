@@ -13,11 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ARO Foundation",
-  description: "Creating opportunities for vulnerable individuals through empowerment, health awareness, and community support.",
-  icons: {
-    icon: "/logo.png",
-  },
+  title: "ARO Foundation | The Nurturing Place",
+  description:
+    "Creating opportunities for vulnerable individuals through empowerment, health awareness, and community support.",
 };
 
 export default function RootLayout({
