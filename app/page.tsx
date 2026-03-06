@@ -507,49 +507,47 @@ export default function Home() {
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-slate-900 shadow-2xl">
-            <div className="grid gap-4">
-             <input
-  id="name"
-  type="text"
-  placeholder="Your name"
-  className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
-/>
-
-<input
-  id="email"
-  type="email"
-  placeholder="Your email"
-  className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
-/>
-
-<input
-  id="subject"
-  type="text"
-  placeholder="Subject"
-  className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
-/>
-
-<textarea
-  id="message"
-  placeholder="Your message"
-  className="min-h-[140px] rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
-/>
-             <button
-  onClick={() => {
-    const name = (document.getElementById("name") as HTMLInputElement).value;
-    const email = (document.getElementById("email") as HTMLInputElement).value;
-    const subject = (document.getElementById("subject") as HTMLInputElement).value;
-    const message = (document.getElementById("message") as HTMLTextAreaElement).value;
-
-    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-
-    window.location.href = `mailto:aroffoundation@gmail.com?subject=${subject}&body=${body}`;
-  }}
-  className="rounded-2xl bg-blue-800 px-5 py-3 font-semibold text-white transition hover:bg-blue-900"
+           <form
+  action="mailto:aroffoundation@gmail.com"
+  method="POST"
+  encType="text/plain"
+  className="grid gap-4"
 >
-  Send Message
-</button>
-            </div>
+  <input
+    type="text"
+    name="Name"
+    placeholder="Your name"
+    className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+  />
+
+  <input
+    type="email"
+    name="Email"
+    placeholder="Your email"
+    className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+  />
+
+  <input
+    type="text"
+    name="Subject"
+    placeholder="Subject"
+    className="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+  />
+
+  <textarea
+    name="Message"
+    placeholder="Your message"
+    className="min-h-[140px] rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-700"
+  />
+
+  <button
+    type="submit"
+    className="rounded-2xl bg-blue-800 px-5 py-3 font-semibold text-white transition hover:bg-blue-900"
+  >
+    Send Message
+  </button>
+</form>
+            
           </div>
         </div>
       </section>
