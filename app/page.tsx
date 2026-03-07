@@ -29,7 +29,118 @@ const stats = [
   { value: "100%", label: "Community Focused" },
   { value: "Ongoing", label: "Support & Outreach" },
 ];
+const outreachGroups = [
+  {
+    title: "Stakeholders Engagement",
+    id: "stakeholders",
+    date: "February 2025",
+    description:
+      "The foundation began its thyroid awareness campaign with a stakeholders engagement in Lafia, Nasarawa State, bringing together community leaders, religious leaders, health workers, and representatives of the Ministry of Health to share the mission and build local support.",
+    folder: "STAKEHOLDERS ENGAGEMENT",
+    images: [
+      "stake1.jpg",
+      "stake2.jpg",
+      "stake3.jpg",
+      "stake4.jpg",
+      "stake5.jpg",
+      "stake6.jpg",
+      "stake7.jpg",
+      "stake8.jpg",
+      "stake9.jpg",
+      "stake10.jpg",
+      "stake11.jpg",
+      "stake12.jpg",
+    ],
+  },
+  {
+    title: "Community Sensitisation Drive",
+    id: "community",
+    description:
+      "The next phase focused on community sensitisation drives in churches, mosques, community centres, and market areas, helping people understand thyroid disorders, symptoms, and the importance of early testing and awareness.",
+    folder: "COMMUNITY SESITISATION DRIVE",
+    images: [
+      "comsen1.jpg",
+      "comsen2.jpg",
+      "comsen3.jpg",
+      "comsen4.jpg",
+      "comsen5.jpg",
+      "comsen6.jpg",
+      "comsen7.jpg",
+      "comsen8.jpg",
+      "comsen9.jpg",
+      "comsen10.jpg",
+      "comsen11.jpg",
+      "comsen12.jpg",
+      "comsen13.jpg",
+      "comsen14.jpg",
+      "comsen15.jpg",
+    ],
+  },
+  {
+    title: "World Thyroid Day Street Walk",
+    id: "thyroid-day",
+    date: "25 May 2025",
+    description:
+      "To commemorate World Thyroid Day on 25 May 2025, the foundation organised a street walk in Lafia to raise awareness, spark public conversations, and encourage people to pay attention to thyroid health.",
+    folder: "THYROID WORLD DAY",
+    images: [
+      "thywor1.jpg",
+      "thywor2.jpg",
+      "thywor3.jpg",
+      "thywor4.jpg",
+      "thywor5.jpg",
+      "thywor6.jpg",
+      "thywor7.jpg",
+      "thywor8.jpg",
+      "thywor9.jpg",
+      "thywor10.jpg",
+    ],
+  },
+  {
+    title: "Foundation Launch",
+    id: "launch",
+    date: "25–27 May 2025",
+    description:
+      "The foundation launch was a three-day program that included the World Thyroid Walk on 25/05/2025, school sandals distribution on 26/05/2025 at TA'AL Model Primary School and Tudun Gwandara Primary School, and the official foundation launch on 27/05/2025.",
+    highlight:
+      "At the main launch, 30 widows were empowered with grants of ₦100,000 each, while 5 young ladies were trained and empowered in catering services with startup kits and cash support.",
+    folder: "FOUNDATION LAUNCH",
+    images: [
+      "found1.jpg",
+      "found2.jpg",
+      "found3.jpg",
+      "found4.jpg",
+      "found5.jpg",
+      "found6.jpg",
+      "found7.jpg",
+      "found8.jpg",
+      "found9.jpg",
+      "found10.jpg",
+      "found11.jpg",
+      "found12.jpg",
+      "found13.jpg",
+      "found14.jpg",
+      "found15.jpg",
+    ],
+  },
+];
 
+const mediaVideos = [
+  {
+    title: "Foundation Activity Video",
+    description:
+      "A video highlight of one of the foundation’s major outreach and awareness activities.",
+    embedUrl: "https://www.youtube.com/embed/zJH6V3zvIpI",
+    watchUrl: "https://youtu.be/zJH6V3zvIpI?si=wc67TeCI9nUtwaHp",
+  },
+  {
+    title: "Silent Weight",
+    description:
+      "A drama film created to deepen awareness and public understanding around thyroid-related issues.",
+    embedUrl: "https://www.youtube.com/embed/8_9mhjZwIgA",
+    watchUrl: "https://youtu.be/8_9mhjZwIgA?si=JJ3HTTPPdXDK3GEY",
+  },
+];
 export default function Home() {
   return (
     <main className="bg-white text-slate-900">
@@ -75,7 +186,9 @@ export default function Home() {
   target="_blank"
   rel="noopener noreferrer"
   className="rounded-full bg-yellow-400 px-4 py-2 text-sm font-semibold text-blue-900 hover:bg-yellow-300"
->
+><a href="#outreach" className="hover:text-blue-800">
+  Outreach
+</a>
   Donate
 </a>
             <a
@@ -205,6 +318,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
               Our Programs
             </p>
+            
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">
               Focused initiatives that create real impact.
             </h2>
@@ -446,7 +560,98 @@ In the meantime, you can contact us through the Contact section below.
     </div>
   </div>
 </section>
+<section id="outreach" className="bg-white py-20">
+  <div className="mx-auto max-w-7xl px-6">
 
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
+        Programs in Action
+      </p>
+
+      <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+        Our outreach and awareness work
+      </h2>
+
+      <p className="mt-5 leading-8 text-slate-600">
+        These moments reflect the foundation’s work across stakeholder
+        engagement, community sensitisation, World Thyroid Day awareness,
+        and the official foundation launch activities in Lafia, Nasarawa State.
+      </p>
+    </div>
+
+
+    <div className="mt-12 space-y-16">
+      {outreachGroups.map((group) => (
+        <div key={group.id} className="rounded-[2rem] bg-slate-50 p-6 ring-1 ring-slate-200 md:p-8">
+
+          <h3 className="text-2xl font-bold text-slate-900">
+            {group.title}
+          </h3>
+
+          {group.date && (
+            <p className="text-sm text-blue-800 font-semibold mt-1">
+              {group.date}
+            </p>
+          )}
+
+          <p className="mt-4 text-slate-600 leading-7">
+            {group.description}
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {group.images.map((image) => (
+              <div key={image} className="overflow-hidden rounded-xl">
+
+                <Image
+                  src={`/images/${group.folder}/${image}`}
+                  alt={`${group.title}`}
+                  width={500}
+                  height={350}
+                  className="h-56 w-full object-cover hover:scale-105 transition"
+                />
+
+              </div>
+            ))}
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+<section className="bg-slate-50 py-20">
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
+        Video Highlights
+      </p>
+
+      <h3 className="mt-3 text-3xl font-bold text-slate-900">
+        Watch our awareness work
+      </h3>
+    </div>
+
+    <div className="mt-10 grid gap-8 md:grid-cols-2">
+
+      {mediaVideos.map((video) => (
+        <div key={video.title} className="rounded-2xl overflow-hidden shadow-sm">
+
+          <iframe
+            src={video.embedUrl}
+            title={video.title}
+            className="w-full aspect-video"
+            allowFullScreen
+          />
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
       <section id="impact" className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-3xl">
