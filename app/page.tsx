@@ -336,41 +336,45 @@ export default function Home() {
       </section>
 
       <section id="programs" className="bg-slate-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
-              Our Programs
-            </p>
-            
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-              Focused initiatives that create real impact.
-            </h2>
-            <p className="mt-5 leading-8 text-slate-600">
-              Through advocacy, empowerment, and education, our programs are
-              designed to respond to real needs in vulnerable communities.
-            </p>
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mx-auto max-w-3xl text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-700">
+        What We Do
+      </p>
+
+      <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
+        Our Programs
+      </h2>
+
+      <p className="mt-5 text-base leading-8 text-slate-600 md:text-lg">
+        We create impact through thyroid awareness, widow empowerment,
+        youth development, and educational support for vulnerable
+        individuals and communities.
+      </p>
+    </div>
+
+    <div className="mt-14 grid gap-6 md:grid-cols-2">
+      {programs.map((program, index) => (
+        <div
+          key={program.title}
+          className="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        >
+          <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-800 text-lg font-bold text-white shadow-sm">
+            {String(index + 1).padStart(2, "0")}
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {programs.map((program, index) => (
-              <div
-                key={program.title}
-                className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-800 text-lg font-bold text-white">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-                <h3 className="text-xl font-bold text-slate-900">
-                  {program.title}
-                </h3>
-                <p className="mt-3 leading-7 text-slate-600">
-                  {program.description}
-                </p>
-              </div>
-            ))}
-          </div>
+          <h3 className="text-xl font-bold text-slate-900 md:text-2xl">
+            {program.title}
+          </h3>
+
+          <p className="mt-4 leading-8 text-slate-600">
+            {program.description}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section id="thyroid" className="py-20">
         <div className="mx-auto max-w-7xl px-6">
