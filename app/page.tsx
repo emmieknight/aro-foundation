@@ -181,15 +181,18 @@ export default function Home() {
             <a href="#contact" className="hover:text-blue-800">
               Contact
             </a>
+       <a href="#outreach" className="hover:text-blue-800">
+  Outreach
+</a>     
            <a
   href="https://wa.me/2348036144445"
   target="_blank"
   rel="noopener noreferrer"
   className="rounded-full bg-yellow-400 px-4 py-2 text-sm font-semibold text-blue-900 hover:bg-yellow-300"
-><a href="#outreach" className="hover:text-blue-800">
-  Outreach
-</a>
+
+>
   Donate
+
 </a>
             <a
   href="https://wa.me/2348036144445"
