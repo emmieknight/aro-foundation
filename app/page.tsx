@@ -205,73 +205,93 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
-          <div>
-            <p className="mb-4 inline-block rounded-full bg-yellow-400/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-300">
-              An Opportunity to Thrive
-            </p>
+     <section className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+  <div className="absolute inset-0">
+    <div className="absolute left-[-120px] top-[-80px] h-72 w-72 rounded-full bg-yellow-400/10 blur-3xl" />
+    <div className="absolute right-[-80px] top-20 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
+    <div className="absolute bottom-[-120px] left-1/3 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
+  </div>
 
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              Adedokun Rebecca Omolola Foundation
-            </h1>
+  <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
+    <div className="max-w-3xl">
+      <p className="mb-5 inline-flex rounded-full border border-yellow-300/20 bg-yellow-400/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-yellow-300">
+        An Opportunity to Thrive
+      </p>
 
-            <p className="mt-4 text-xl text-blue-100">The Nurturing Place</p>
+      <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] md:text-6xl">
+        Adedokun Rebecca Omolola Foundation
+      </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-blue-100 md:text-lg">
-              Creating opportunities for vulnerable individuals through
-              empowerment, health awareness, and community support.
-            </p>
+      <p className="mt-5 text-xl text-blue-100 md:text-2xl">
+        The Nurturing Place
+      </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#programs"
-                className="rounded-2xl bg-yellow-400 px-6 py-3 font-semibold text-slate-900 transition hover:scale-[1.02]"
-              >
-                Explore Our Programs
-              </a>
-              <a
-                href="#get-involved"
-                className="rounded-2xl border border-white/30 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
-              >
-                Get Involved
-              </a>
-            </div>
-          </div>
+      <p className="mt-7 max-w-2xl text-base leading-8 text-blue-100/90 md:text-lg">
+        Creating opportunities for vulnerable individuals through thyroid
+        awareness, empowerment, educational support, and community outreach.
+      </p>
 
-          <div className="rounded-3xl bg-white p-8 text-slate-900 shadow-2xl">
-            <div className="flex items-center gap-4">
-              <Image
-                src="/logo.png"
-                alt="ARO Foundation Logo"
-                width={70}
-                height={70}
-                className="rounded-full"
-              />
-              <div>
-                <h2 className="text-2xl font-bold text-blue-800">
-                  Our Vision
-                </h2>
-                <p className="mt-1 text-sm text-slate-500">
-                  A future where vulnerable groups are given the opportunity to
-                  thrive.
-                </p>
-              </div>
-            </div>
+      <div className="mt-9 flex flex-wrap gap-4">
+        <a
+          href="#programs"
+          className="rounded-xl bg-yellow-400 px-6 py-3 font-semibold text-slate-950 transition duration-300 hover:bg-yellow-300"
+        >
+          Explore Our Programs
+        </a>
 
-            <div className="mt-6 rounded-2xl bg-slate-50 p-5">
-              <h3 className="text-lg font-semibold text-slate-900">
-                Our Mission
-              </h3>
-              <p className="mt-3 leading-7 text-slate-600">
-                We strive to create a nurturing environment where individuals
-                can rebuild their lives, develop meaningful skills, and
-                contribute positively to their communities and society at large.
-              </p>
-            </div>
-          </div>
+        <a
+          href="#contact"
+          className="rounded-xl border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-white/10"
+        >
+          Get Involved
+        </a>
+      </div>
+    </div>
+
+    <div className="rounded-[2rem] bg-white/95 p-8 text-slate-900 shadow-[0_20px_80px_rgba(0,0,0,0.25)] ring-1 ring-white/20 backdrop-blur">
+      <div className="flex items-center gap-4">
+        <div className="rounded-2xl bg-blue-50 p-2">
+          <Image
+            src="/logo.png"
+            alt="ARO Foundation Logo"
+            width={64}
+            height={64}
+            className="rounded-full"
+          />
         </div>
-      </section>
+
+        <div>
+          <h2 className="text-2xl font-bold text-blue-800">Our Vision</h2>
+          <p className="mt-1 text-sm leading-6 text-slate-500">
+            A future where vulnerable groups are given the opportunity to
+            thrive.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-6 rounded-[1.5rem] bg-slate-50 p-6 ring-1 ring-slate-200">
+        <h3 className="text-lg font-semibold text-slate-900">Our Mission</h3>
+        <p className="mt-3 leading-8 text-slate-600">
+          We strive to create a nurturing environment where individuals can
+          rebuild their lives, develop meaningful skills, and contribute
+          positively to their communities and society at large.
+        </p>
+      </div>
+
+      <div className="mt-6 grid grid-cols-2 gap-4">
+        <div className="rounded-2xl bg-blue-900 p-4 text-white">
+          <p className="text-2xl font-bold">4+</p>
+          <p className="mt-1 text-sm text-blue-100">Core Focus Areas</p>
+        </div>
+
+        <div className="rounded-2xl bg-yellow-400 p-4 text-slate-950">
+          <p className="text-2xl font-bold">2025</p>
+          <p className="mt-1 text-sm">Active Outreach Campaigns</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="about" className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-10 md:grid-cols-2">
