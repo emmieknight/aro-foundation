@@ -679,83 +679,76 @@ In the meantime, you can contact us through the Contact section below.
 
   </div>
 </section>
-      <section id="impact" className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
-              Our Impact
-            </p>
-            <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-              Building hope through awareness, empowerment, and support.
-            </h2>
-            <p className="mt-5 leading-8 text-slate-600">
-              We are committed to creating meaningful change in vulnerable
-              communities through health awareness, skills development, and
-              practical support initiatives that help people thrive.
-            </p>
-          </div>
+     <section id="impact" className="bg-white py-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mx-auto max-w-3xl text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-700">
+        Our Impact
+      </p>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-4">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.label}
-                className={
-                  index === 0
-                    ? "rounded-3xl bg-blue-800 p-8 text-white shadow-lg"
-                    : "rounded-3xl bg-slate-50 p-8 shadow-sm ring-1 ring-slate-200"
-                }
-              >
-                <h3
-                  className={
-                    index === 0
-                      ? "text-4xl font-bold text-yellow-300"
-                      : "text-4xl font-bold text-blue-800"
-                  }
-                >
-                  {stat.value}
-                </h3>
-                <p
-                  className={
-                    index === 0
-                      ? "mt-3 text-base text-blue-100"
-                      : "mt-3 text-base text-slate-600"
-                  }
-                >
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
+      <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
+        Building hope through awareness, empowerment, and support
+      </h2>
 
-          <div className="mt-12 rounded-[2rem] bg-slate-50 p-8 ring-1 ring-slate-200 md:p-10">
-            <div className="grid gap-8 md:grid-cols-2 md:items-center">
-              <div>
-                <h3 className="text-2xl font-bold text-slate-900">
-                  A mission that goes beyond words
-                </h3>
-                <p className="mt-4 leading-8 text-slate-600">
-                  From raising awareness of thyroid diseases to empowering
-                  widows, supporting children’s education, and equipping youth
-                  with practical skills, the foundation exists to create
-                  opportunities where they are needed most.
-                </p>
-              </div>
+      <p className="mt-5 text-base leading-8 text-slate-600 md:text-lg">
+        We are committed to creating meaningful change in vulnerable
+        communities through health awareness, skills development, and
+        practical support initiatives that help people thrive.
+      </p>
+    </div>
 
-              <div className="rounded-3xl bg-blue-900 p-8 text-white">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-300">
-                  Why it matters
-                </p>
-                <p className="mt-4 leading-8 text-blue-100">
-                  Every initiative is aimed at restoring dignity, strengthening
-                  communities, and helping vulnerable people access support,
-                  opportunity, and hope.
-                </p>
-              </div>
-            </div>
-          </div>
+    <div className="mt-14 grid gap-6 md:grid-cols-4">
+      <div className="rounded-[2rem] bg-blue-900 p-8 text-white shadow-lg">
+        <h3 className="text-4xl font-bold text-yellow-300">4</h3>
+        <p className="mt-3 text-base text-blue-100">Core Programs</p>
+      </div>
+
+      <div className="rounded-[2rem] bg-slate-50 p-8 shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <h3 className="text-4xl font-bold text-blue-800">100+</h3>
+        <p className="mt-3 text-base text-slate-600">Lives Reached</p>
+      </div>
+
+      <div className="rounded-[2rem] bg-slate-50 p-8 shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <h3 className="text-4xl font-bold text-blue-800">Ongoing</h3>
+        <p className="mt-3 text-base text-slate-600">Community Support</p>
+      </div>
+
+      <div className="rounded-[2rem] bg-slate-50 p-8 shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <h3 className="text-4xl font-bold text-blue-800">Active</h3>
+        <p className="mt-3 text-base text-slate-600">Awareness Campaigns</p>
+      </div>
+    </div>
+
+    <div className="mt-12 rounded-[2rem] bg-slate-50 p-8 ring-1 ring-slate-200 md:p-10">
+      <div className="grid gap-8 md:grid-cols-2 md:items-center">
+        <div>
+          <h3 className="text-2xl font-bold text-slate-900 md:text-3xl">
+            A mission that goes beyond words
+          </h3>
+
+          <p className="mt-4 leading-8 text-slate-600">
+            From raising awareness of thyroid diseases to empowering widows,
+            supporting children’s education, and equipping youth with
+            practical skills, the foundation exists to create opportunities
+            where they are needed most.
+          </p>
         </div>
-      </section>
 
+        <div className="rounded-[2rem] bg-blue-900 p-8 text-white shadow-lg">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-yellow-300">
+            Why It Matters
+          </p>
+
+          <p className="mt-4 leading-8 text-blue-100">
+            Every initiative is aimed at restoring dignity, strengthening
+            communities, and helping vulnerable people access support,
+            opportunity, and hope.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
