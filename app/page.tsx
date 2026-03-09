@@ -5,38 +5,85 @@ const teamMembers = [
 name: "Johnson Olushola Adedokun",
 role: "Founder & Visioner",
 image: "/images/team/FOUNDER.jpg",
-group: "Founder"
+group: "Founder",
+bio: `Johnson Olushola Adedokun is a passionate humanitarian, entrepreneur, and faith-driven leader whose life mission is centred on service, compassion, and empowering vulnerable members of society.
+
+Born on March 3, 1977 in Kaduna South LGA of Kaduna State, Nigeria, he attended LEA Primary School Ungwan Sanusi Kaduna and Olivet Baptist High School in Oyo State.
+
+He studied Architecture at Kaduna Polytechnic (OND) and later obtained his HND in Architecture from The Polytechnic Ibadan. After completing NYSC in Lafia, Nasarawa State, he began his career in architecture before venturing into business.
+
+He later earned a PGD in Management Science from Benue State University, an MBA from Joseph Sarwuan Tarka University Makurdi, and an MSc in Digital Marketing from Manchester Metropolitan University, UK.
+
+His humanitarian vision was deeply shaped by his late wife Omolola Rebecca Adedokun whose legacy inspired the creation of the ARO Foundation.
+
+Through the foundation he leads initiatives empowering widows, supporting vulnerable students, promoting healthcare awareness and creating opportunities for young people.
+
+He lives and works in the United Kingdom with his family and remains committed to serving humanity through faith, compassion and purposeful leadership.`
 },
 
 {
 name: "Adeleye Taiwo Shola",
-role: "Board of Trustees Member",
+role: "Member, Board of Trustees",
 image: "/images/team/ADELEYE.jpg",
-group: "Board"
+group: "Board",
+bio: `Adeleye Taiwo Shola was born on 19 March 1974 in Mushin Lagos State Nigeria.
+
+He attended Oye Primary School Mushin and Mushin Boys High School Okota Lagos.
+
+He holds an OND from Lagos State Polytechnic, HND from Federal Polytechnic Ado-Ekiti and a Bachelor's Degree in Business Administration from Nasarawa State University Keffi.
+
+He is a Chartered Marketer certified by the National Institute of Marketing of Nigeria and a member of the Association of Nigerian University Professional Administrators.
+
+He currently serves as Assistant Registrar at Federal University Lafia and Resident Pastor of Gospel Faith Mission International Lafia.
+
+He is married to Theresa Oluwaseun Adeleye and they are blessed with four children.`
 },
 
 {
-name: "Sefia Ojochogwu Odugbo",
+name: "Sefia Ojochogwu Odugbo (Enejoh)",
 role: "Secretary, Board of Trustees",
 image: "/images/team/SEFIA.jpg",
-group: "Board"
+group: "Board",
+bio: `Sefia Ojochogwu Odugbo is an education professional and public servant who serves as Secretary of the Board of Trustees of ARO Foundation.
+
+She holds a Bachelor of Education in Language Arts from Ahmadu Bello University Zaria and previously obtained her NCE from Federal College of Education Zaria.
+
+She is currently pursuing a Master's degree in Educational Administration and Management at Nasarawa State University Keffi.
+
+She works with the Nigeria Revenue Service and lives in Abuja with her husband and their three children.`
 },
 
 {
 name: "Embaga Joseph Dan",
 role: "Project Coordinator",
 image: "/images/team/EMBAGA.jpg",
-group: "Leadership"
+group: "Leadership",
+bio: `Embaga Joseph Dan is a development consultant with over 14 years of experience in NGO and public health development work.
+
+He began his career as a volunteer with Hope in Life Programme and later coordinated Shelterlife Environmental Initiative where he led implementation of the World Bank assisted HIV/AIDS HAF HPDP II project.
+
+He coordinated SHiPS for MARPs in Lafia and Karu LGAs under Society for Family Health and later contributed to the OVC ACHIEVE/ASPIRE project under Institute of Human Virology Nigeria from 2015 to 2025.
+
+He holds a Master's Degree in Peace and Conflict Studies from Federal University Lafia, an MBA from University of Maiduguri and an International Master's Certificate from Global Entrepreneurship Institute USA.
+
+He also holds an HND in Business Administration from Kaduna Polytechnic and is currently pursuing a PhD in Diplomacy Security and Strategic Studies.`
 },
 
 {
 name: "Babatunde Olusegun Adewale",
 role: "Project Manager",
 image: "/images/team/BABATUNDE.jpg",
-group: "Leadership"
+group: "Leadership",
+bio: `Babatunde Olusegun Adewale is an experienced Project Manager, Architect and Interior Designer with over 15 years professional experience.
+
+He currently serves as Project Manager and Interior Design Coordinator at Ambience Consultants Limited Abuja.
+
+He has coordinated major interior and furniture projects including Abuja Continental Hotel, Bank of Industry Headquarters and offices within the World Trade Centre Abuja.
+
+He holds an MSc in Architectural Engineering from King Fahd University of Petroleum and Minerals Saudi Arabia, a BSc in Architecture from University of Lagos and an HND in Architectural Technology from The Polytechnic Ibadan.`
 }
 
-];
+]
 const programs = [
   {
     title: "Thyroid Awareness",
@@ -754,7 +801,62 @@ className="mx-auto h-40 w-40 rounded-full object-cover"
       ))}
 
     </div>
+<section id="team" className="bg-slate-50 py-24">
 
+<div className="mx-auto max-w-7xl px-6">
+
+<p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
+Leadership & Governance
+</p>
+
+<h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+Our Leadership Team
+</h2>
+
+<p className="mt-4 max-w-2xl text-slate-600">
+The ARO Foundation operates through a transparent governance structure
+with committed leadership guiding its humanitarian programs and impact.
+</p>
+
+<div className="mt-14 space-y-16">
+
+{teamMembers.map((member) => (
+
+<div key={member.name} className="grid gap-8 md:grid-cols-3 items-start">
+
+<div>
+<img
+src={member.image}
+alt={member.name}
+className="h-64 w-full rounded-xl object-cover object-top"
+/>
+</div>
+
+<div className="md:col-span-2">
+
+<h3 className="text-xl font-semibold text-slate-900">
+{member.name}
+</h3>
+
+<p className="text-blue-700 font-medium mt-1">
+{member.role}
+</p>
+
+<p className="mt-4 text-slate-600 leading-relaxed whitespace-pre-line">
+{member.bio}
+</p>
+
+</div>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
   </div>
 </section>
      <section id="impact" className="bg-white py-20">
