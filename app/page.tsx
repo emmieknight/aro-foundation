@@ -1,28 +1,64 @@
 import Image from "next/image";
+const teamMembers = [
 
+{
+name: "Johnson Olushola Adedokun",
+role: "Founder & Visioner",
+image: "/images/team/FOUNDER.jpg",
+group: "Founder"
+},
+
+{
+name: "Adeleye Taiwo Shola",
+role: "Board of Trustees Member",
+image: "/images/team/ADELEYE.jpg",
+group: "Board"
+},
+
+{
+name: "Sefia Ojochogwu Odugbo",
+role: "Secretary, Board of Trustees",
+image: "/images/team/SEFIA.jpg",
+group: "Board"
+},
+
+{
+name: "Embaga Joseph Dan",
+role: "Project Coordinator",
+image: "/images/team/EMBAGA.jpg",
+group: "Leadership"
+},
+
+{
+name: "Babatunde Olusegun Adewale",
+role: "Project Manager",
+image: "/images/team/BABATUNDE.jpg",
+group: "Leadership"
+}
+
+];
 const programs = [
   {
-    title: "Raising Awareness of Thyroid Diseases",
+    title: "Thyroid Awareness",
     description:
-      "Community education, awareness campaigns, and health sensitization focused on thyroid disease, early detection, and informed care.",
+      "Educating communities on thyroid health, early detection, and proper medical support."
   },
   {
-    title: "Empowering Widows Through Business Training",
+    title: "Widow Empowerment",
     description:
-      "Practical support and business training that help widows build sustainable livelihoods with dignity and confidence.",
+      "Providing support, training, and resources to help widows rebuild stable and independent lives."
   },
   {
-    title: "Youth Empowerment in Catering",
+    title: "Youth Skill Development",
     description:
-      "Equipping young people with valuable catering and hospitality skills for employment, independence, and entrepreneurship.",
+      "Equipping young people with practical skills, mentorship, and opportunities for growth."
   },
   {
-    title: "Supporting Vulnerable Children's Education",
+    title: "Educational Support",
     description:
-      "Providing educational support, guidance, and opportunity for vulnerable children to learn, grow, and thrive.",
-  },
+      "Supporting children and vulnerable families with access to education and learning resources."
+  }
 ];
-
 const stats = [
   { value: "4", label: "Core Programs" },
   { value: "1", label: "Shared Mission" },
@@ -163,27 +199,15 @@ export default function Home() {
           </div>
 
           <nav className="hidden gap-6 text-sm font-medium text-slate-700 md:flex">
-            <a href="#about" className="hover:text-blue-800">
-              About
-            </a>
-            <a href="#programs" className="hover:text-blue-800">
-              Programs
-            </a>
-            <a href="#thyroid" className="hover:text-blue-800">
-              Thyroid Awareness
-            </a>
-            <a href="#support" className="hover:text-blue-800">
-  Get Help
-</a>
-            <a href="#impact" className="hover:text-blue-800">
-              Impact
-            </a>
-            <a href="#contact" className="hover:text-blue-800">
-              Contact
-            </a>
-       <a href="#outreach" className="hover:text-blue-800">
-  Outreach
-</a>     
+         <a href="#about" className="hover:text-blue-800">About</a>
+
+<a href="#programs" className="hover:text-blue-800">Programs</a>
+
+<a href="#impact" className="hover:text-blue-800">Impact</a>
+
+<a href="#media" className="hover:text-blue-800">Media</a>
+
+<a href="#contact" className="hover:text-blue-800">Get Involved</a>  
            <a
   href="https://wa.me/2348036144445"
   target="_blank"
@@ -588,7 +612,7 @@ In the meantime, you can contact us through the Contact section below.
   </div>
 </section>
 <section id="outreach" className="bg-white py-20">
-  <div className="mx-auto max-w-7xl px-6">
+ <div className="mx-auto max-w-7xl px-6">
 
     <div className="max-w-3xl">
       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
@@ -605,47 +629,101 @@ In the meantime, you can contact us through the Contact section below.
         and the official foundation launch activities in Lafia, Nasarawa State.
       </p>
     </div>
-
-
-    <div className="mt-12 space-y-16">
-      {outreachGroups.map((group) => (
-        <div key={group.id} className="rounded-[2rem] bg-slate-50 p-6 ring-1 ring-slate-200 md:p-8">
-
-          <h3 className="text-2xl font-bold text-slate-900">
-            {group.title}
-          </h3>
-
-          {group.date && (
-            <p className="text-sm text-blue-800 font-semibold mt-1">
-              {group.date}
-            </p>
-          )}
-
-          <p className="mt-4 text-slate-600 leading-7">
-            {group.description}
-          </p>
-
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {group.images.map((image) => (
-              <div key={image} className="overflow-hidden rounded-xl">
-
-                <Image
-                  src={`/images/${group.folder}/${image}`}
-                  alt={`${group.title}`}
-                  width={500}
-                  height={350}
-                  className="h-56 w-full object-cover hover:scale-105 transition"
-                />
-
-              </div>
-            ))}
-          </div>
-
-        </div>
-      ))}
     </div>
 
+
+  <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+    Programs & Outreach Activities
+  </h2>
+
+  <p className="mt-4 max-w-2xl text-slate-600">
+    Our programs focus on thyroid awareness, community education,
+    empowerment initiatives and public health engagement across
+    communities.
+  </p>
+
+  <div className="mt-10 space-y-6">
+    
+
+    {outreachGroups.map((group) => (
+      <details key={group.id} className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200">
+
+     
+
+        <summary className="cursor-pointer text-xl font-semibold text-slate-900">
+          {group.title}
+        </summary>
+
+        <p className="mt-3 text-slate-600">
+          {group.description}
+        </p>
+
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {group.images.map((image) => (
+
+            <img
+              key={image}
+              src={`/images/${group.folder}/${image}`}
+              alt={group.title}
+              className="h-56 w-full rounded-xl object-cover"
+            />
+
+          ))}
+        </div>
+
+      </details>
+
+    ))}
+
   </div>
+</section>
+    <section className="bg-white py-20">
+
+<div className="mx-auto max-w-7xl px-6">
+
+<p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
+Leadership & Governance
+</p>
+
+<h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+Meet Our Team
+</h2>
+
+<p className="mt-5 max-w-2xl text-slate-600">
+The ARO Foundation operates through a committed leadership structure that ensures transparency, accountability, and effective delivery of humanitarian programs.
+</p>
+
+<div className="mt-12 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+
+{teamMembers.map((member) => (
+
+<div
+key={member.name}
+className="rounded-xl bg-slate-50 p-6 shadow-sm text-center"
+>
+
+<img
+src={member.image}
+alt={member.name}
+className="mx-auto h-40 w-40 rounded-full object-cover"
+/>
+
+<h3 className="mt-4 text-lg font-semibold text-slate-900">
+{member.name}
+</h3>
+
+<p className="text-sm text-blue-800">
+{member.role}
+</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
 </section>
 <section className="bg-slate-50 py-20">
   <div className="mx-auto max-w-7xl px-6">
@@ -749,6 +827,7 @@ In the meantime, you can contact us through the Contact section below.
     </div>
   </div>
 </section>
+
       <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
