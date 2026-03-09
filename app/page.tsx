@@ -24,7 +24,7 @@ He lives and works in the United Kingdom with his family and remains committed t
 {
 name: "Adeleye Taiwo Shola",
 role: "Member, Board of Trustees",
-image: "/images/team/adeleya.jpg",
+image: "/images/team/adeleye.jpg",
 group: "Board",
 bio: `Adeleye Taiwo Shola was born on 19 March 1974 in Mushin Lagos State Nigeria.
 
@@ -44,7 +44,7 @@ name: "Sofia Ojochogwu Odugbo (Enejoh)",
 role: "Secretary, Board of Trustees",
 image: "/images/team/sofia.jpg",
 group: "Board",
-bio: `Sefia Ojochogwu Odugbo is an education professional and public servant who serves as Secretary of the Board of Trustees of ARO Foundation.
+bio: `Sofia Ojochogwu Odugbo is an education professional and public servant who serves as Secretary of the Board of Trustees of ARO Foundation.
 
 She holds a Bachelor of Education in Language Arts from Ahmadu Bello University Zaria and previously obtained her NCE from Federal College of Education Zaria.
 
