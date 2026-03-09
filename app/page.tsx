@@ -4,7 +4,7 @@ const teamMembers = [
 {
 name: "Johnson Olushola Adedokun",
 role: "Founder & Visioner",
-image: "/images/team/FOUNDER.jpg",
+image: "/images/team/founder.jpg",
 group: "Founder",
 bio: `Johnson Olushola Adedokun is a passionate humanitarian, entrepreneur, and faith-driven leader whose life mission is centred on service, compassion, and empowering vulnerable members of society.
 
@@ -24,7 +24,7 @@ He lives and works in the United Kingdom with his family and remains committed t
 {
 name: "Adeleye Taiwo Shola",
 role: "Member, Board of Trustees",
-image: "/images/team/ADELEYE.jpg",
+image: "/images/team/adeleya.jpg",
 group: "Board",
 bio: `Adeleye Taiwo Shola was born on 19 March 1974 in Mushin Lagos State Nigeria.
 
@@ -40,9 +40,9 @@ He is married to Theresa Oluwaseun Adeleye and they are blessed with four childr
 },
 
 {
-name: "Sefia Ojochogwu Odugbo (Enejoh)",
+name: "Sofia Ojochogwu Odugbo (Enejoh)",
 role: "Secretary, Board of Trustees",
-image: "/images/team/SEFIA.jpg",
+image: "/images/team/sofia.jpg",
 group: "Board",
 bio: `Sefia Ojochogwu Odugbo is an education professional and public servant who serves as Secretary of the Board of Trustees of ARO Foundation.
 
@@ -56,7 +56,7 @@ She works with the Nigeria Revenue Service and lives in Abuja with her husband a
 {
 name: "Embaga Joseph Dan",
 role: "Project Coordinator",
-image: "/images/team/EMBAGA.jpg",
+image: "/images/team/embaga.jpg",
 group: "Leadership",
 bio: `Embaga Joseph Dan is a development consultant with over 14 years of experience in NGO and public health development work.
 
@@ -72,7 +72,7 @@ He also holds an HND in Business Administration from Kaduna Polytechnic and is c
 {
 name: "Babatunde Olusegun Adewale",
 role: "Project Manager",
-image: "/images/team/BABATUNDE.jpg",
+image: "/images/team/babatunde.jpg",
 group: "Leadership",
 bio: `Babatunde Olusegun Adewale is an experienced Project Manager, Architect and Interior Designer with over 15 years professional experience.
 
