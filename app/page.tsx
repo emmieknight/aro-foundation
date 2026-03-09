@@ -724,54 +724,7 @@ In the meantime, you can contact us through the Contact section below.
 
   </div>
 </section>
-    <section className="bg-white py-20">
-
-<div className="mx-auto max-w-7xl px-6">
-
-<p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-800">
-Leadership & Governance
-</p>
-
-<h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-Meet Our Team
-</h2>
-
-<p className="mt-5 max-w-2xl text-slate-600">
-The ARO Foundation operates through a committed leadership structure that ensures transparency, accountability, and effective delivery of humanitarian programs.
-</p>
-
-<div className="mt-12 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-
-{teamMembers.map((member) => (
-
-<div
-key={member.name}
-className="rounded-xl bg-slate-50 p-6 shadow-sm text-center"
->
-
-<img
-src={member.image}
-alt={member.name}
-className="mx-auto h-40 w-40 rounded-full object-cover"
-/>
-
-<h3 className="mt-4 text-lg font-semibold text-slate-900">
-{member.name}
-</h3>
-
-<p className="text-sm text-blue-800">
-{member.role}
-</p>
-
-</div>
-
-))}
-
-</div>
-
-</div>
-
-</section>
+   
 <section className="bg-slate-50 py-20">
   <div className="mx-auto max-w-7xl px-6">
 
